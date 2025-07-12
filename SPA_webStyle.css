@@ -1,0 +1,102 @@
+/*STYLE FOR ALL*/
+body {
+  background-color:#ffc5d3 ;
+  margin:0;
+  padding:0;
+}
+
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 500px) {    
+  html {
+    font-size: 14px;
+  }
+}
+
+h1, h2, button {
+  color: #b12c4b;
+  text-align: center;
+  margin: 0;
+    }
+
+/*NAVIGATION BUTTONS*/
+.navButton{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  width: 80vw;
+  max-width: 400px;
+  height: auto;
+  max-height: 200px;
+  background-color: white;
+  border: 2px solid #5c353e;
+  border-radius: 20px;
+  padding: 2%;
+  margin:2.5%;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navButton img {
+  width:25vw;
+  max-width: 200px;
+  height: auto;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+#toMessage img{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/*PAGES*/
+.page{
+  display:none
+}
+
+.page.show{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+/*OPENING PAGE*/
+#greeting {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 30vh;
+  width: 30vw;
+}
+
+#greeting img{
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+}
+
+/*MESSAGE PAGE*/
+#letter{
+  background-color: rgb(254, 255, 175);
+  border:2px solid #5c353e;
+  border-radius: 20px;
+  margin: 5%;
+  text-align: justify;
+  padding:5%;
+  font-size: 0.5 em; 
+  color:#b12c4b;
+}
+
+/*GALLERY PAGE*/
+
+/*PLAYLIST PAGE*/
+
+/*HOME PAGE*/
