@@ -29,7 +29,7 @@ h1, h2, button {
   gap: 1rem;
   width: 80vw;
   max-width: 400px;
-  height: auto;
+  height: 20vh;
   max-height: 200px;
   background-color: white;
   border: 2px solid #5c353e;
@@ -43,7 +43,7 @@ h1, h2, button {
 .navButton img {
   width:25vw;
   max-width: 200px;
-  height: auto;
+  height: 100%;
   max-height: 200px;
   object-fit: contain;
 }
@@ -55,7 +55,7 @@ h1, h2, button {
 
 /*PAGES*/
 .page{
-  display:none
+  display:none;
 }
 
 .page.show{
@@ -96,7 +96,46 @@ h1, h2, button {
 }
 
 /*GALLERY PAGE*/
+#gallery #images{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
 
+.pic{
+  max-width: 220px;
+  width: 20vw;
+  background: white;
+  padding: 5% 5% 10%;
+  border: 1px solid white;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+  text-align: left;
+}
+
+.pic img{
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+@media (max-width:500px){
+#gallery #images{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.pic{
+  max-width: 220px;
+  width: 30vw;
+  background: white;
+  padding: 5% 5% 10%;
+  border: 1px solid white;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+  text-align: left;
+}
+}
 /*PLAYLIST PAGE*/
 
 /*HOME PAGE*/
