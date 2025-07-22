@@ -15,7 +15,7 @@ html {
   }
 }
 
-h1, h2, button {
+h2, button {
   color: #b12c4b;
   text-align: center;
   margin: 0;
@@ -53,20 +53,59 @@ h1, h2, button {
   margin-bottom: 5%;
 }
 
+/* PAGE BUTTONS*/
+footer {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer button{
+  text-align: center;
+  background-color: white;
+  border: 2px solid #5c353e;
+  padding: 2%;
+  margin:2.5%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.back{
+  border-radius: 30px 10px 10px 30px;
+}
+
+.next{
+  border-radius: 10px 30px 30px 10px;
+}
+
 /*PAGES*/
 .page{
-  display:none;
+  display: none;
+  opacity: 0;
 }
 
 .page.show{
+  opacity: 1;
   display:flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 100vw;
-  min-height: 100vh;
+  height: 100dvh;
 }
+
+header {
+  background-color: #b12c4b;
+  color: white;
+  text-align: center;
+  width: 100vw;
+}
+
 /*OPENING PAGE*/
+.opening{
+  justify-content: center;
+  align-items: center;
+}
+
 #greeting {
   display: flex;
   flex-direction: row;
@@ -75,6 +114,7 @@ h1, h2, button {
   text-align: center;
   height: 30vh;
   width: 30vw;
+  font-size: larger;
 }
 
 #greeting img{
@@ -96,12 +136,13 @@ h1, h2, button {
 }
 
 /*GALLERY PAGE*/
-#gallery #images{
+#images{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 0;
-  margin: 0;
-  justify-content: center;
+  margin: 4rem 0 4rem 0;
+  justify-content: space-around;
+  gap: 4rem;
 }
 
 .pic{
@@ -112,6 +153,7 @@ h1, h2, button {
   border: 1px solid white;
   box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
   text-align: left;
+  margin: 0;
 }
 
 .pic img{
@@ -127,15 +169,65 @@ h1, h2, button {
 }
 
 .pic{
-  max-width: 220px;
   width: 30vw;
-  background: white;
-  padding: 5% 5% 10%;
-  border: 1px solid white;
-  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
-  text-align: left;
 }
 }
+ 
 /*PLAYLIST PAGE*/
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.songList{
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 10%;
+  gap: 4rem;
+  width: 100%;
+}
+
+.song {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: auto;
+  background-color: white;
+  border: 2px solid #b12c4b;
+  border-radius: 2rem;
+  padding: 1rem;
+  text-align: left;
+  margin: 0;
+  width:80vw;
+  max-width: 600px;
+    transition: transform 0.3s ease;
+
+}
+
+.song img{
+  width: 30%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border: 0.5rem solid black;
+  border-radius: 1000px;
+  margin-right: 2rem;
+}
+
+.song:hover img{
+  animation: rotate 10s linear infinite;
+}
+
+.song:hover{
+  transform: scale(1.1);
+}
+
+@keyframes rotate{
+  from{transform: rotate(0deg);}
+  to{transform: rotate(360deg);}
+}
 
 /*HOME PAGE*/
