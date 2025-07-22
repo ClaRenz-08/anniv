@@ -12,7 +12,7 @@ function showPage(pageID) {
     selectedPage.scrollTo(0, 0);
     window.scrollTo(0, 0);
 }
-/*
+
 //COUNTDOWN
 const targetDate = new Date("December 3, 2026 00:00:00").getTime();
 
@@ -36,7 +36,7 @@ const countdownTimer = setInterval(() => {
   }
 }, 1000);
 
-//COUNTERr
+//COUNTER
 
   const startDate = new Date("December 3, 2024 00:00:00").getTime();
   const t = setInterval(()=>{
@@ -54,5 +54,5 @@ const countdownTimer = setInterval(() => {
     }
   }
   },1000)
-*/
+
 
