@@ -80,7 +80,7 @@ footer button{
 /*PAGES*/
 .page{
   display: none;
-  opacity: 0;
+  overflow-y:auto;
 }
 
 .page.show{
