@@ -36,7 +36,7 @@ const countdownTimer = setInterval(() => {
   }
 }, 1000);
 
-//COUNTER
+//COUNTERr
 
   const startDate = new Date("December 3, 2024 00:00:00").getTime();
   const t = setInterval(()=>{
