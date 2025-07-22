@@ -7,6 +7,8 @@ function showPage(pageID) {
 
     const selectedPage=document.getElementById(pageID);
     selectedPage.classList.add('show');
-    selectedPage.scrollTo(0, 0);
-    window.scrollTo(0, 0);
+    setTimeout(() => {
+        selectedPage.scrollTo(0, 0);
+        window.scrollTo(0, 0);
+    }, 50);
 }
