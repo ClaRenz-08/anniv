@@ -80,7 +80,7 @@ footer button{
 /*PAGES*/
 .page{
   display: none;
-  overflow-y:auto;
+  overflow-y: auto;
 }
 
 .page.show{
@@ -133,7 +133,7 @@ header {
   padding:5%;
   font-size: 0.5 em; 
   color:#b12c4b;
-  max-width:700px;
+  max-width: 700px;
 }
 
 /*GALLERY PAGE*/
@@ -189,7 +189,7 @@ a{
   padding: 0;
   margin: 10%;
   gap: 4rem;
-  width: 100%;
+  width: 0;
 }
 
 .song {
@@ -205,7 +205,7 @@ a{
   margin: 0;
   width:80vw;
   max-width: 600px;
-    transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 
 }
 
@@ -232,3 +232,24 @@ a{
 }
 
 /*HOME PAGE*/
+#timers{
+  text-align: center;
+  margin-bottom: 10%;
+  
+}
+
+#timers h1{
+  color: #5c353e;
+  position:relative;
+}
+
+#timers h1::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #5c353e;
+  height: 2px;
+  width:100%;
+
+}
