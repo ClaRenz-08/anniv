@@ -3,17 +3,44 @@ body {
   background-color:#ffc5d3 ;
   margin:0;
   padding:0;
+  background-image: url(gallery/kiss.jpg);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;  
 }
 
 html {
   font-size: 16px;
 }
 
-@media (max-width: 500px) {    
+@media (max-width: 660px) {    
   html {
     font-size: 14px;
   }
+
+  body{
+    background-image: url(gallery/ecoPark.jpg);
+
+  }
+  #container {
+    width:40vw;
+  }
+
+  #yes {
+    left:50%;
+  }
+
+  #no {
+    top:10%;
+    left:31%
+  }
 }
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 
 /*PAGES*/
 .page{
@@ -29,12 +56,18 @@ html {
   width: 100vw;
   height: 100dvh;
 }
+.notes {
+  color: #b12c4b;
+  text-align: center;
+  z-index: 1;
+}
 
 header {
   background-color: #b12c4b;
   color: white;
   text-align: center;
   width: 100vw;
+  z-index: 1;
 }
 
 footer {
@@ -54,12 +87,68 @@ footer button{
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+footer button:hover{
+  transform: scale(1.08);
+  transition: transform 0.3s ease-in-out;
+}
+
+
 .back{
   border-radius: 30px 10px 10px 30px;
 }
 
 .next{
   border-radius: 10px 30px 30px 10px;
+}
+
+/*MINI QUIZ PAGE*/
+#quiz{
+  height: 100dvh;
+  width: 100vw;
+  background-color: #ffc5d3;
+}
+
+#quiz h1{
+  color: #5c353e;
+  text-align: center;
+  margin: 10% 0 5% 0;
+  z-index: 1;
+}
+#container {
+  position: relative;
+  height: 100dvh;
+  width: 50vw;
+}
+
+.qButton {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  position: absolute;
+  margin:0;
+  text-align: center;
+  width: fit-content;
+  transition: 0.3s;
+  border: 2px solid #5c353e;
+  border-radius: 20px;
+
+}
+#yes {
+  left:30%;
+  background-color: rgb(119, 255, 119);
+}
+
+#yes:hover{
+  transform: scale(1.5);
+}
+
+#no {
+  right:30%;
+  background-color: rgb(252, 97, 97);
+}
+
+#no:hover{
+  transform: scale(0.5);
 }
 
 /*OPENING PAGE*/
@@ -76,7 +165,9 @@ footer button{
   text-align: center;
   height: 30vh;
   width: 30vw;
-  font-size: larger;
+  font-size: 1rem;
+  margin-top: 10dvh;
+  color: #5c353e;
 }
 
 #greeting img{
@@ -87,28 +178,22 @@ footer button{
 
 /*MESSAGE PAGE*/
 #letter{
-  background-color: rgb(254, 255, 175);
+  background-color: rgb(255, 255, 229);
+  background-image: url(util/paperBackground.jpg);
+  background-size: cover;
+  background-position: center;
   border:2px solid #5c353e;
-  border-radius: 20px;
   margin: 5%;
-  text-align: justify;
-  padding:5% 5% 5% 10%;
+  text-align: left;
+  padding: 5%;
+  font-family: cursive;
   font-size: 0.5 em; 
-  color:#b12c4b;
+  color:black;
   max-width: 700px;
   position: relative;
   font-size: 1.2em;
   height: fit-content;
-}
-
-#letter p{
-  text-indent: 2rem;
-
-}
-
-#letter b{
-  font-size: larger;
-}
+  }
 
 /*GALLERY PAGE*/
 #images{
@@ -124,7 +209,7 @@ footer button{
   max-width: 220px;
   width: 20vw;
   background: white;
-  padding: 5% 5% 10%;
+  padding: 5% 5% 30%;
   border: 1px solid white;
   box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
   text-align: left;
@@ -135,6 +220,11 @@ footer button{
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
+}
+
+.pic:hover{
+  transform: scale(1.09);
+  transition: transform 0.3s ease-in-out;
 }
 
 @media (max-width:500px){
@@ -149,11 +239,6 @@ footer button{
 }
  
 /*PLAYLIST PAGE*/
-a{
-  text-decoration: none;
-  color: inherit;
-}
-
 .songList{
  
   display: flex;
@@ -179,8 +264,6 @@ a{
   margin: 0;
   width:80vw;
   max-width: 600px;
-  transition: transform 0.3s ease;
-
 }
 
 .song img{
@@ -198,6 +281,8 @@ a{
 
 .song:hover{
   transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+
 }
 
 @keyframes rotate{
@@ -229,7 +314,7 @@ a{
   max-width: 200px;
   height: 100%;
   max-height: 200px;
-  object-fit: contain;
+  object-fit: contain;  
 }
 
 .navButton h2{
@@ -254,7 +339,8 @@ a{
   text-align: center;
   margin-bottom: 10%;
   color: #b12c4b;
-  
+  z-index: 1;
+
 }
 
 #timers h1{
@@ -270,5 +356,35 @@ a{
   background: #5c353e;
   height: 2px;
   width:100%;
+}
 
+/* FLOATING HEARTS ANIMATION */
+#floathings {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+.heartSpin {
+  position: absolute;
+  width: 80px; height: 80px;
+  background: url('util/ribbon.gif') no-repeat center/contain;
+  opacity: 0.8;
+  animation: floatUp 4s linear forwards;
+}
+
+.heartPink {
+  position: absolute;
+  width: 40px; height: 40px;
+  background: url('util/pinkHeart.gif') no-repeat center/contain;
+  opacity: 0.8;
+  animation: floatUp 4s linear forwards;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(100vh) scale(1); opacity: 1; }
+  60% { opacity: 1; }
+  100% { transform: translateY(-10vh) scale(1.5); opacity: 0; }
 }
