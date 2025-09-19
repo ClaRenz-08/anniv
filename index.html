@@ -4,151 +4,134 @@
          <meta charset=""utf-8>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="SPA_webStyle.css">
-        <title>Happey Anniversary Babyyy!!!</title>
+        <link rel="icon" type="image/png" href="util/icon.png">
+        <title>Happy Anniversary Babyyy!!!</title>
     </head>
 
     <body>
-        <div id="opening" class="page show">
+        <div id="quiz" class="page show"> <!--Quiz Page-->
+            <h1>Do you love me? (don't click No 🥺)</h1>
+                <div id="container">
+                    <button onclick="showPage('opening')" id="yes" class="qButton">Yes ❤️</button>
+                    <button id="no" class="qButton">No 😢</button>
+                </div>
+        </div>
+        <div id="opening" class="page"> <!--Opening Page-->
             <div id="greeting">
-                <img class="hearts"src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDhqczYxdHZubHluZzIydDJ0amtja3Bnajd3NzM3dGZ3Ynh5OWpxbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VJFdDXRay60qxif99J/giphy.gif">
-                    <h1>Hello Baby Happy Anniversary!</h1>
-                <img class="hearts" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDhqczYxdHZubHluZzIydDJ0amtja3Bnajd3NzM3dGZ3Ynh5OWpxbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VJFdDXRay60qxif99J/giphy.gif" style="transform: scaleX(-1)">
+                <h1>Eiiii Love niya si ako<br>Happy Happy Anniversary Looooooveeeeeeee!</h1>
             </div>
-            <button onclick="showPage('message')" id="toMessage" class="navButton">
-                <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2s3Ym43dWxrajA0ZTVyMGt4bHEzcDNvOGdvejNkZW1yenMxbnllbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/iRFmHzRuJdJ0tn8af8/giphy.gif">
-                <h2>Read Me!</h2>
+                <button onclick="showPage('gallery')" id="toGallery" class="navButton">
+                 <img src="util/together.gif">
+                 <h2>Look at These oh Cute Nila (click)</h2>
+               
             </button>
         </div>
 
-        <div id="message" class="page">
-            <header>
-                <h1>Diba you like reading? So ito long message</h1>
-            </header>
-
-            <div id="letter">
-               <b>To my Dear Mariah,</b>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eum corporis amet a totam harum dolores modi eligendi iste! Explicabo, enim magni! Enim non recusandae quae omnis aspernatur eaque voluptas. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus doloribus tempore eum expedita consequuntur sint voluptate, minima dolores ut nesciunt repudiandae porro, fugit aliquid quae maiores modi dicta officia. Voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit repellat, dolores odit eos libero incidunt fugiat nisi sunt! Odit quisquam voluptates ullam eveniet dolor quas, praesentium repudiandae delectus ad optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, culpa ut. Similique saepe, explicabo quibusdam, ea magnam numquam quam dolor praesentium corporis neque, molestiae doloremque amet quia. Explicabo, sunt! Exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur velit obcaecati labore animi incidunt repellat aut quasi. Sed iste eos nisi dolor cum expedita eligendi, qui, quo dolorum ad magnam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quibusdam dolorem necessitatibus tempore neque eligendi dolore maxime, sed, aliquid alias quod voluptates aspernatur odit sunt autem maiores illo cumque placeat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores id error laudantium ad ab ea officiis veniam vel possimus illo. Ea repellat, at distinctio qui aliquam impedit alias optio atque.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eum corporis amet a totam harum dolores modi eligendi iste! Explicabo, enim magni! Enim non recusandae quae omnis aspernatur eaque voluptas. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus doloribus tempore eum expedita consequuntur sint voluptate, minima dolores ut nesciunt repudiandae porro, fugit aliquid quae maiores modi dicta officia. Voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit repellat, dolores odit eos libero incidunt fugiat nisi sunt! Odit quisquam voluptates ullam eveniet dolor quas, praesentium repudiandae delectus ad optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, culpa ut. Similique saepe, explicabo quibusdam, ea magnam numquam quam dolor praesentium corporis neque, molestiae doloremque amet quia. Explicabo, sunt! Exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur velit obcaecati labore animi incidunt repellat aut quasi. Sed iste eos nisi dolor cum expedita eligendi, qui, quo dolorum ad magnam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quibusdam dolorem necessitatibus tempore neque eligendi dolore maxime, sed, aliquid alias quod voluptates aspernatur odit sunt autem maiores illo cumque placeat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores id error laudantium ad ab ea officiis veniam vel possimus illo. Ea repellat, at distinctio qui aliquam impedit alias optio atque.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eum corporis amet a totam harum dolores modi eligendi iste! Explicabo, enim magni! Enim non recusandae quae omnis aspernatur eaque voluptas. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus doloribus tempore eum expedita consequuntur sint voluptate, minima dolores ut nesciunt repudiandae porro, fugit aliquid quae maiores modi dicta officia. Voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit repellat, dolores odit eos libero incidunt fugiat nisi sunt! Odit quisquam voluptates ullam eveniet dolor quas, praesentium repudiandae delectus ad optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, culpa ut. Similique saepe, explicabo quibusdam, ea magnam numquam quam dolor praesentium corporis neque, molestiae doloremque amet quia. Explicabo, sunt! Exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur velit obcaecati labore animi incidunt repellat aut quasi. Sed iste eos nisi dolor cum expedita eligendi, qui, quo dolorum ad magnam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quibusdam dolorem necessitatibus tempore neque eligendi dolore maxime, sed, aliquid alias quod voluptates aspernatur odit sunt autem maiores illo cumque placeat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores id error laudantium ad ab ea officiis veniam vel possimus illo. Ea repellat, at distinctio qui aliquam impedit alias optio atque.</p>
-                <p>Yours lovingly,<br><b>Clarence</b></p>
-            </div>
-
-            <footer>
-                <button onclick="showPage('opening')" class="back">
-                    <h2>Back</h2>
-                </button>
-                <button onclick="showPage('gallery')" class="next">
-                    <h2>Next</h2>
-                </button>
-            </footer>
-            
-        </div>
-
-        <div id="gallery" class="page">
+        <div id="gallery" class="page"> <!--Gallery Page-->
             <header>
                 <h1>Look oh we're so cute together, kaya dapat lagi tayong together hihi</h1>
             </header>
 
             <div id="images">
             <figure class="pic">
-                <img src="gallery\terog.jpeg" alt="img of us">
-                <figcaption>Date</figcaption>
-                <p>Caption</p>
+                <img src="gallery/terog.jpeg" alt="img of us">
+                <figcaption>07/10/2025</figcaption>
+                
             </figure>
 
             <figure class="pic">
-                <img src="gallery\bahay.jpg" alt="img of us">
-                <figcaption>Date</figcaption>
-                <p>Caption</p>
+                <img src="gallery/bahay.jpg" alt="img of us">
+                <figcaption>04/19/2025</figcaption>
+                
             </figure>
 
             <figure class="pic">
-                <img src="gallery\goatie.jpeg" alt="img of us">
-                <figcaption>Date</figcaption>
-                <p>Caption</p>
+                <img src="gallery/goatie.jpeg" alt="img of us">
+                <figcaption>04/26/2025</figcaption>
+                
             </figure>
 
             <figure class="pic">
-                <img src="gallery\macShot.jpg" alt="img of us">
-                <figcaption>Date</figcaption>
-                <p>Caption</p>
+                <img src="gallery/macShot.jpg" alt="img of us">
+                <figcaption>03/09/2025</figcaption>
+                
             </figure>
 
             <figure class="pic">
-                <img src="gallery\miming.jpeg" alt="img of us">
-                <figcaption>Date</figcaption>
-                <p>Caption</p>
+                <img src="gallery/miming.jpeg" alt="img of us">
+                <figcaption>02/22/2025</figcaption>
+                
             </figure>
 
             <figure class="pic">
-                <img src="gallery\bani.jpeg" alt="img of us">
-                <figcaption>Date</figcaption>
-                <p>Caption</p>
+                <img src="gallery/bani.jpeg" alt="img of us">
+                <figcaption>06/29/2025</figcaption>
+                
             </figure>
 
             <figure class="pic">
-                <img src="gallery\1stMotMot.jpg" alt="img of us">
-                <figcaption>Date</figcaption>
-                <p>Caption</p>
+                <img src="gallery/1stMotMot.jpg" alt="img of us">
+                <figcaption>01/25/2025</figcaption>
+                
             </figure>
 
             <figure class="pic">
-                <img src="gallery\mtChina2.jpg" alt="img of us">
-                <figcaption>Date</figcaption>
-                <p>Caption</p>
+                <img src="gallery/mtChina2.jpg" alt="img of us">
+                <figcaption>04/11/2025</figcaption>
+                
             </figure>
 
             <figure class="pic">
-                <img src="gallery\rosario.jpg" alt="img of us">
-                <figcaption>Date</figcaption>
-                <p>Caption</p>
+                <img src="gallery/rosario.jpg" alt="img of us">
+                <figcaption>12/18/2024</figcaption>
+                
             </figure>
 
             <figure class="pic">
-                <img src="gallery\sison.jpg" alt="img of us">
-                <figcaption>Date</figcaption>
-                <p>Caption</p>
+                <img src="gallery/sison.jpg" alt="img of us">
+                <figcaption>12/21/2024</figcaption>
+                
             </figure>
 
             <figure class="pic">
-                <img src="gallery\mtChina.jpg" alt="img of us">
-                <figcaption>Date</figcaption>
-                <p>Caption</p>
+                <img src="gallery/mtChina.jpg" alt="img of us">
+                <figcaption>04/16/2025</figcaption>
+                
             </figure>
 
             <figure class="pic">
-                <img src="gallery\1st date.jpeg" alt="img of us">
-                <figcaption>Date</figcaption>
-                <p>Caption</p>
+                <img src="gallery/1st date.jpeg" alt="img of us">
+                <figcaption>12/08/2024</figcaption>
+                
             </figure>
 
             <figure class="pic">
-                <img src="gallery\choir.jpg" alt="img of us">
-                <figcaption>Date</figcaption>
-                <p>Caption</p>
+                <img src="gallery/choir.jpg" alt="img of us">
+                <figcaption>12/12/2024</figcaption>
+                
             </figure>
 
             <figure class="pic">
-                <img src="gallery\urda.jpg" alt="img of us">
-                <figcaption>Date</figcaption>
-                <p>Caption</p>
+                <img src="gallery/urda.jpg" alt="img of us">
+                <figcaption>06/11/2025</figcaption>
+                
             </figure>
 
             <figure class="pic">
-                <img src="gallery\ecoPark.jpg" alt="img of us">
-                <figcaption>Date</figcaption>
-                <p>Caption</p>
+                <img src="gallery/ecoPark.jpg" alt="img of us">
+                <figcaption>01/04/2025</figcaption>
+                
             </figure>
 
             <figure class="pic">
-                <img src="gallery\kiss.jpg" alt="img of us">
-                <figcaption>Date</figcaption>
-                <p>Caption</p>
+                <img src="gallery/kiss.jpg" alt="img of us">
+                <figcaption>01/04/2025</figcaption>
+                
             </figure>
             </div>
-
+            <h1 class="notes">Let's create more memories together 👉🏻👈🏻</h1>
             <footer>
-                <button onclick="showPage('message')" class="back">
+                <button onclick="showPage('opening')" class="back">
                     <h2>Back</h2>
                 </button>
                 <button onclick="showPage('playlist')" class="next">
@@ -157,14 +140,14 @@
             </footer>
         </div>
 
-        <div id="playlist" class="page">
+        <div id="playlist" class="page"> <!--Playlist Page-->
             <header>
                 <h1>Every time I listen to these songs, I remember You po (pindot mo to listen)</h1>
             </header>
 
             <div class="songList">
                 <a class="song" href="https://youtu.be/Q49pnA4jsp8?si=9WYu6SkS2NXr10qK" target="_blank">
-                    <img src="album/" alt="Album Cover">
+                    <img src="album/love.jpg" alt="Album Cover">
                     <div class="song-info">
                         <h3>Love.</h3>
                         <p>Wave to Earth</p>
@@ -172,7 +155,7 @@
                 </a>
 
                 <a class="song" href="https://youtu.be/-7vjJYco7hM?si=q8ADrQDHHLSBvy-U" target="_blank">
-                    <img src="album/" alt="Album Cover">
+                    <img src="album/lastnightonearth.jpeg" alt="Album Cover">
                     <div class="song-info">
                         <h3>Last Night on Earth</h3>
                         <p>Green Day</p>
@@ -180,7 +163,7 @@
                 </a>
 
                 <a class="song" href="https://youtu.be/FTL55q-b5B4?si=mCcBhqEO1FWhwMEh" target="_blank">
-                    <img src="album/ " alt="Album Cover">
+                    <img src="album/apieceofyou.jpeg" alt="Album Cover">
                     <div class="song-info">
                         <h3>A Piece of You</h3>
                         <p>Nathaniel Constantin</p>
@@ -188,7 +171,7 @@
                 </a>
 
                 <a class="song" href="https://youtu.be/vBy7FaapGRo?si=svlXW7_lKV__ZbmY" target="_blank">
-                    <img src="album/ " alt="Album Cover">
+                    <img src="album/bestpart.jpg" alt="Album Cover">
                     <div class="song-info">
                         <h3>Best Part (feat H.E.R.)</h3>
                         <p>Daniel Caeser</p>
@@ -196,31 +179,31 @@
                 </a>
 
                 <a class="song" href="https://youtu.be/gVnn9OQ-zF0?si=5oqAskxweq5IO7ia" target="_blank">
-                    <img src="album/ " alt="Album Cover">
+                    <img src="album/balisong.webp" alt="Album Cover">
                     <div class="song-info">
                         <h3>Balisong</h3>
                         <p>Rico Blanco</p>
                     </div>
                 </a>
 
+                <a class="song" href="https://youtu.be/wg4duGUGUZs?si=sxI5Jj-xg92HTUaf" target="_blank">
+                    <img src="album/youruniverse.jpg" alt="Album Cover">
+                    <div class="song-info">
+                        <h3>Your Universe</h3>
+                        <p>Rico Blanco</p>
+                    </div>
+                </a>
+
                 <a class="song" href="https://youtu.be/XToA-1dZYWA?si=k7a7SYxUheqwbkD_" target="_blank">
-                    <img src="album/ " alt="Album Cover">
+                    <img src="album/pasilyo.jpg" alt="Album Cover">
                     <div class="song-info">
                         <h3>Pasilyo</h3>
                         <p>SunKissed Lola</p>
                     </div>
                 </a>
 
-                <a class="song" href="https://youtu.be/-pz8RfOWS18?si=SOTp7q952feiO64Z" target="_blank">
-                    <img src="album/ " alt="Album Cover">
-                    <div class="song-info">
-                        <h3>Palagi</h3>
-                        <p>TJ Montendre</p>
-                    </div>
-                </a>
-
                 <a class="song" href="https://youtu.be/oiAtAzFLDfE?si=QTpMG-FtlLhYdw_6" target="_blank">
-                    <img src="album/ " alt="Album Cover">
+                    <img src="album/tibok.jpeg" alt="Album Cover">
                     <div class="song-info">
                         <h3>Tibok</h3>
                         <p>Earl Agustin</p>
@@ -228,7 +211,7 @@
                 </a>
 
                 <a class="song" href="https://youtu.be/tyKu0uZS86Q?si=dQmqVgTcq8u4yC6Z" target="_blank">
-                    <img src="album/ " alt="Album Cover">
+                    <img src="album/valentine.jpeg" alt="Album Cover">
                     <div class="song-info">
                         <h3>Valentine</h3>
                         <p>Laufey</p>
@@ -236,7 +219,7 @@
                 </a>
 
                 <a class="song" href="https://youtu.be/G5vz7UcDm-g?si=LAMZeRYHhlHJ-Dhh" target="_blank">
-                    <img src="album/" alt="Album Cover">
+                    <img src="album/theonlyexeption.jpg" alt="Album Cover">
                     <div class="song-info">
                         <h3>The Only Exception</h3>
                         <p>Paramore</p>
@@ -244,62 +227,80 @@
                 </a>
 
                 <a class="song" href="https://youtu.be/_R3B2Xr8kwQ?si=6qrEzCFXk5kfGhyg" target="_blank">
-                    <img src="album/ " alt="Album Cover">
+                    <img src="album/mykindofwoman.png" alt="Album Cover">
                     <div class="song-info">
                         <h3>My Kind of Women</h3>
                         <p>Mac DeMarco</p>
                     </div>
                 </a>
-
-                <a class="song" href="https://youtu.be/b9zWIY7X2fI?si=QAFqSMOH_ZvtV58k" target="_blank">
-                    <img src="gallery/1st date.jpeg" alt="Album Cover">
-                    <div class="song-info">
-                        <h3>I'll Be</h3>
-                        <p>Edwin McCain</p>
-                    </div>
-                </a>
             </div>
-
+            <h1 class="notes">All these songs and your voice is still my favorite ❤️</h1>
             <footer>
                 <button onclick="showPage('gallery')" class="back">
+                    <h2>Back</h2>
+                </button>
+                <button onclick="showPage('message')" class="next">
+                    <h2>Next</h2>
+                </button>
+            </footer>
+        </div>
+
+        <div id="message" class="page"> <!--Message Page-->
+            <header>
+                <h1>Love Letter for You</h1>
+            </header>
+
+            <div id="letter">
+               <p><b>To my Dear Mariah,</b></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eum corporis amet a totam harum dolores modi eligendi iste! Explicabo, enim magni! Enim non recusandae quae omnis aspernatur eaque voluptas. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus doloribus tempore eum expedita consequuntur sint voluptate, minima dolores ut nesciunt repudiandae porro, fugit aliquid quae maiores modi dicta officia. Voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit repellat, dolores odit eos libero incidunt fugiat nisi sunt! Odit quisquam voluptates ullam eveniet dolor quas, praesentium repudiandae delectus ad optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, culpa ut. Similique saepe, explicabo quibusdam, ea magnam numquam quam dolor praesentium corporis neque, molestiae doloremque amet quia. Explicabo, sunt! Exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur velit obcaecati labore animi incidunt repellat aut quasi. Sed iste eos nisi dolor cum expedita eligendi, qui, quo dolorum ad magnam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quibusdam dolorem necessitatibus tempore neque eligendi dolore maxime, sed, aliquid alias quod voluptates aspernatur odit sunt autem maiores illo cumque placeat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores id error laudantium ad ab ea officiis veniam vel possimus illo. Ea repellat, at distinctio qui aliquam impedit alias optio atque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eum corporis amet a totam harum dolores modi eligendi iste! Explicabo, enim magni! Enim non recusandae quae omnis aspernatur eaque voluptas. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus doloribus tempore eum expedita consequuntur sint voluptate, minima dolores ut nesciunt repudiandae porro, fugit aliquid quae maiores modi dicta officia. Voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit repellat, dolores odit eos libero incidunt fugiat nisi sunt! Odit quisquam voluptates ullam eveniet dolor quas, praesentium repudiandae delectus ad optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, culpa ut. Similique saepe, explicabo quibusdam, ea magnam numquam quam dolor praesentium corporis neque, molestiae doloremque amet quia. Explicabo, sunt! Exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur velit obcaecati labore animi incidunt repellat aut quasi. Sed iste eos nisi dolor cum expedita eligendi, qui, quo dolorum ad magnam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quibusdam dolorem necessitatibus tempore neque eligendi dolore maxime, sed, aliquid alias quod voluptates aspernatur odit sunt autem maiores illo cumque placeat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores id error laudantium ad ab ea officiis veniam vel possimus illo. Ea repellat, at distinctio qui aliquam impedit alias optio atque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eum corporis amet a totam harum dolores modi eligendi iste! Explicabo, enim magni! Enim non recusandae quae omnis aspernatur eaque voluptas. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus doloribus tempore eum expedita consequuntur sint voluptate, minima dolores ut nesciunt repudiandae porro, fugit aliquid quae maiores modi dicta officia. Voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit repellat, dolores odit eos libero incidunt fugiat nisi sunt! Odit quisquam voluptates ullam eveniet dolor quas, praesentium repudiandae delectus ad optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, culpa ut. Similique saepe, explicabo quibusdam, ea magnam numquam quam dolor praesentium corporis neque, molestiae doloremque amet quia. Explicabo, sunt! Exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur velit obcaecati labore animi incidunt repellat aut quasi. Sed iste eos nisi dolor cum expedita eligendi, qui, quo dolorum ad magnam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quibusdam dolorem necessitatibus tempore neque eligendi dolore maxime, sed, aliquid alias quod voluptates aspernatur odit sunt autem maiores illo cumque placeat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores id error laudantium ad ab ea officiis veniam vel possimus illo. Ea repellat, at distinctio qui aliquam impedit alias optio atque.</p>
+                <p>Yours lovingly,<br><b>Clarence</b></p>
+            </div>
+
+            <h1 class="notes">My words are not enough to express my love for you 💌</h1>
+
+            <footer>
+                <button onclick="showPage('playlist')" class="back">
                     <h2>Back</h2>
                 </button>
                 <button onclick="showPage('home')" class="next">
                     <h2>Next</h2>
                 </button>
             </footer>
+            
         </div>
 
-        <div id="home" class="page">
+        <div id="home" class="page"> <!--Home Page-->
             <header>
-                <h1>Tapos na ang Show</h1>
+                <h1>Tapos na pu ang Show</h1>
             </header> 
 
-            <button onclick="showPage('message')" id="toMessage" class="navButton">
-                <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2s3Ym43dWxrajA0ZTVyMGt4bHEzcDNvOGdvejNkZW1yenMxbnllbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/iRFmHzRuJdJ0tn8af8/giphy.gif">
-                <h2>Read Me!</h2>
-            </button>
-
             <button onclick="showPage('gallery')" id="toGallery" class="navButton">
-                <img src="https://media.tenor.com/ieGsbU8n9J4AAAAi/peach-goma-peach-and-goma.gif">
+                <img src="util/together.gif">
                 <h2>Pictures of Us Together</h2>
+                
             </button>
 
             <button onclick="showPage('playlist')" id="toPlaylist" class="navButton">
-                <img src="https://media.tenor.com/3_xuAnSNMg0AAAAi/little-bad-bear-dancing-listening.gif">
-                <h2>Songs That Reminds Me of You</h2>
+                <h2 style="text-align: right;">Songs That Reminds Me of You</h2>
+                <img src="util/music.gif">     
+            </button>
+
+            <button onclick="showPage('message')" id="toMessage" class="navButton">
+                <img src="util/letter.gif">
+                <h2>Letter for My Love</h2>
             </button>
 
              <div id="timers">
-                <h2>Time Left Beffore Our Next Anniversary:</h2>
-                <h1 id="countdown"></h1>
                 <h2>We've Been Officially Together for:</h2>
                 <h1 id="dayCount"></h1>
-                <h2>And We've Been Talking for:</h2>
+                <h2>We've Been Talking for:</h2>
                 <h1 id="talkCounter"></h1>
             </div>
 
         </div>
         <script src="SPA_Script.js"></script>
+        <div id="floathings"></div>
     </body>
 </html>
