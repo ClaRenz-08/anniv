@@ -13,28 +13,21 @@ function showPage(pageID) {
     window.scrollTo(0, 0);
 }
 
-//COUNTDOWN
-const targetDate = new Date("December 3, 2026 00:00:00").getTime();
+//MINI QUIZ
+const noBtn = document.getElementById("no");
+const container = document.getElementById("container");
 
-const countdownTimer = setInterval(() => {
-    const now = new Date().getTime();
-    const distance = targetDate - now;
+noBtn.addEventListener("click", () => {
+    const containerRect = container.getBoundingClientRect();
+    const btnWidth = noBtn.offsetWidth;
+    const btnHeight = noBtn.offsetHeight;
 
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    const randomX = Math.floor(Math.random() * (containerRect.width - btnWidth));
+    const randomY = Math.floor(Math.random() * (containerRect.height - btnHeight));
 
-    const countdownEl = document.getElementById("countdown");
-    if (countdownEl) {
-        if (distance > 0) {
-        countdownEl.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-        } else {
-            clearInterval(countdownTimer);
-            countdownEl.textContent = "HAPPE 2ND ANNIVERSARYYYY!!!";
-        }
-  }
-}, 1000);
+    noBtn.style.left = randomX + "px";
+    noBtn.style.top = randomY + "px";
+});
 
 //COUNTER
 const startDate = new Date("December 3, 2024 00:00:00").getTime();
@@ -63,4 +56,21 @@ const talkCounter = setInterval(()=>{
     }
 },1000);
 
+//FLOATING THINGS
+function floaters() {
+    const heartSpin = document.createElement('div');
+    heartSpin.className = 'heartSpin';
+    heartSpin.style.left = Math.random() * 100 + 'vw';
+    heartSpin.style.animationDuration = (3 + Math.random() * 2) + 's';
+    document.getElementById('floathings').appendChild(heartSpin);
 
+    const heart = document.createElement('div');
+    heart.className = 'heartPink';
+    heart.style.left = Math.random() * 100 + 'vw';
+    heart.style.animationDuration = (3 + Math.random() * 2) + 's';
+    document.getElementById('floathings').appendChild(heart);
+    
+    setTimeout(() => heart.remove(), 5000);
+    setTimeout(() => ribbon.remove(), 5000);
+}
+setInterval(floaters, 500);
