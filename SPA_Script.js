@@ -73,5 +73,6 @@ const talkCounter = setInterval(()=>{
     setTimeout(() => heart.remove(), 5000);
     setTimeout(() => ribbon.remove(), 5000);
 }
-setInterval(floaters, 500);
+setInterval(floaters, 500);*/
+
 
