@@ -57,7 +57,7 @@ const talkCounter = setInterval(()=>{
 },1000);
 
 //FLOATING THINGS
-/*function floaters() {
+function floaters() {
     const heartSpin = document.createElement('div');
     heartSpin.className = 'heartSpin';
     heartSpin.style.left = Math.random() * 100 + 'vw';
@@ -73,6 +73,7 @@ const talkCounter = setInterval(()=>{
     setTimeout(() => heart.remove(), 5000);
     setTimeout(() => ribbon.remove(), 5000);
 }
-setInterval(floaters, 500);*/
+setInterval(floaters, 500);
+
 
 
