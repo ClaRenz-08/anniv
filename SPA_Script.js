@@ -56,24 +56,7 @@ const talkCounter = setInterval(()=>{
     }
 },1000);
 
-//FLOATING THINGS
-function floaters() {
-    const heartSpin = document.createElement('div');
-    heartSpin.className = 'heartSpin';
-    heartSpin.style.left = Math.random() * 100 + 'vw';
-    heartSpin.style.animationDuration = (3 + Math.random() * 2) + 's';
-    document.getElementById('floathings').appendChild(heartSpin);
 
-    const heart = document.createElement('div');
-    heart.className = 'heartPink';
-    heart.style.left = Math.random() * 100 + 'vw';
-    heart.style.animationDuration = (3 + Math.random() * 2) + 's';
-    document.getElementById('floathings').appendChild(heart);
-    
-    setTimeout(() => heart.remove(), 5000);
-    setTimeout(() => ribbon.remove(), 5000);
-}
-setInterval(floaters, 500);
 
 
 
