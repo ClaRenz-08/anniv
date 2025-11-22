@@ -40,48 +40,17 @@ html {
   #termBox button{
     font-size: 0.8em;
   } 
-  /*Disable hover effects on mobile*/
-  footer button:hover {
-    transform: scale(1); 
-  }
-  #termBox button:hover {
-    transform: scale(1);
-  }
-  .qButton:hover {
-    transform: scale(1);
-  }
-  .pic:hover {
-    transform: scale(1);
-  }
-  .song:hover {
-    transform: scale(1);
+  /*remove hover effects*/
+  footer button:hover,
+  #termBox button:hover,
+  .qButton:hover,
+  .pic:hover,
+  .song:hover,
+  .navButton:hover {
+    transform: none !important; 
   }
   .song:hover img {
-    animation: none;
-  }
-  .navButton:hover {
-    transform: scale(1);
-  }
-  footer button:hover {
-    transform: none; 
-  }
-  #termBox button:hover {
-    transform: none;
-  }
-  .qButton:hover {
-    transform: none;
-  }
-  .pic:hover {
-    transform: none;
-  }
-  .song:hover {
-    transform: none;
-  }
-  .song:hover img {
-    animation: none; 
-  }
-  .navButton:hover {
-    transform: none;
+    animation: none !important; 
   }
 }
 
