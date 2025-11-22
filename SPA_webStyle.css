@@ -48,6 +48,55 @@ html {
   #termBox button{
     font-size: 0.8em;
   } 
+
+  footer button:hover {
+    transform: scale(1); 
+  }
+
+  #termBox button:hover {
+    transform: scale(1);
+  }
+
+  .qButton:hover {
+    transform: scale(1);
+  }
+
+  .pic:hover {
+    transform: scale(1);
+  }
+
+  .song:hover {
+    transform: scale(1);
+  }
+  .song:hover img {
+    animation: none;
+  }
+
+  .navButton:hover {
+    transform: scale(1);
+  }
+
+  footer button:hover {
+    transform: none; 
+  }
+  #termBox button:hover {
+    transform: none;
+  }
+  .qButton:hover {
+    transform: none;
+  }
+  .pic:hover {
+    transform: none;
+  }
+  .song:hover {
+    transform: none;
+  }
+  .song:hover img {
+    animation: none; 
+  }
+  .navButton:hover {
+    transform: none;
+  }
 }
 
 a{
@@ -133,7 +182,7 @@ footer button:hover{
   margin-top: 15%;
   padding: 2%;;
   height: auto;
-  width: 50vw;
+  max-width: 500px;
   border: #5c353e 2px solid;
   border-radius: 20px;
   background-color: red;
@@ -142,6 +191,8 @@ footer button:hover{
 }
 
 #termBox button{
+  width: fit-content;
+  height: auto;
   transition: 0.3s;
   display: block;
   margin: 5% auto 0 auto;
@@ -152,6 +203,7 @@ footer button:hover{
   border-radius: 20px;
   background-color: white;
   color: black;
+
 }
 
 #termBox button:hover{
