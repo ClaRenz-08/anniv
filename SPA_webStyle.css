@@ -17,65 +17,51 @@ html {
   html {
     font-size: 10px;
   }
-
   body{
     background-image: url(gallery/ecoPark.jpg);
-
   }
   #container {
     width:40vw;
   }
-
   #yes {
     left:50%;
   }
-
   #no {
     top:10%;
     left:31%
   }
-
   footer button{
     font-size: 0.7em;
   }
-
   #termBox{
     width: 80vw;
     font-size: 1em;
-
   }
-
   #termBox button{
     font-size: 0.8em;
   } 
-
+  /*Disable hover effects on mobile*/
   footer button:hover {
     transform: scale(1); 
   }
-
   #termBox button:hover {
     transform: scale(1);
   }
-
   .qButton:hover {
     transform: scale(1);
   }
-
   .pic:hover {
     transform: scale(1);
   }
-
   .song:hover {
     transform: scale(1);
   }
   .song:hover img {
     animation: none;
   }
-
   .navButton:hover {
     transform: scale(1);
   }
-
   footer button:hover {
     transform: none; 
   }
@@ -152,7 +138,7 @@ footer button{
   padding: 0 2% 0 2%;
   margin:2.5%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 
 }
 
