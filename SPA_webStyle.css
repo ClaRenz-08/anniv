@@ -15,7 +15,7 @@ html {
 
 @media (max-width: 660px) {    
   html {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   body{
@@ -34,6 +34,20 @@ html {
     top:10%;
     left:31%
   }
+
+  footer button{
+    font-size: 0.7em;
+  }
+
+  #termBox{
+    width: 80vw;
+    font-size: 1em;
+
+  }
+
+  #termBox button{
+    font-size: 0.8em;
+  } 
 }
 
 a{
@@ -124,7 +138,7 @@ footer button:hover{
   border-radius: 20px;
   background-color: red;
   color: white;
-  text-align: justify;
+  text-align: left;
 }
 
 #termBox button{
@@ -142,6 +156,10 @@ footer button:hover{
 
 #termBox button:hover{
   transform: scale(1.1);
+}
+
+#termBox ul{
+  font-size: 20px;
 }
 
 /*MINI QUIZ PAGE*/
