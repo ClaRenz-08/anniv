@@ -41,7 +41,7 @@ const t = setInterval(()=>{
     if (counterElement) {
         counterElement.textContent = `${days}  days`;
     }
-},1000)
+},60000)
 
 const talkStartDate = new Date("December 3, 2023 00:00:00").getTime();
 const talkCounter = setInterval(()=>{
@@ -54,4 +54,4 @@ const talkCounter = setInterval(()=>{
     if (talkCounterElement) {
         talkCounterElement.textContent = `${days} days`;
     }
-},1000);
+},60000);
