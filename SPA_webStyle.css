@@ -1,24 +1,21 @@
 /*STYLE FOR ALL*/
 body {
-  background-color:#ffc5d3 ;
-  margin:0;
-  padding:0;
-  background-image: url(gallery/kiss.jpg);
-  background-blend-mode: overlay;
-  background-size: cover;
-  background-position: center;  
+  background: linear-gradient(135deg, #f295ab 1.2em, rgba(232, 58, 37, 0) 1.2em) 0 4em, linear-gradient(-135deg, #f295ab 1.2em, rgba(232, 58, 37, 0) 1.2em) 0 4em, radial-gradient(circle at 7.16em 7.4em, #f295ab 1.02em, rgba(232, 58, 37, 0) 1.044em) 0 -4em, radial-gradient(circle at 0.84em 7.4em, #f295ab 1.02em, rgba(232, 58, 37, 0) 1.044em) 0 -4em, linear-gradient(135deg, #f295ab 1.2em, rgba(152, 204, 150, 0) 1.2em) 4em 0, linear-gradient(-135deg, #f295ab 1.2em, rgba(152, 204, 150, 0) 1.2em) 4em 0, radial-gradient(circle at 7.16em 7.4em, #f295ab 1.02em, rgba(152, 204, 150, 0) 1.044em) 4em 0, radial-gradient(circle at 0.84em 7.4em, #f295ab 1.02em, rgba(152, 204, 150, 0) 1.044em) 4em 0;
+  background-size: 8em 8em;
+  background-color: #ffc5d3;
+  background-repeat: repeat;
+  margin: 0;
 }
-
 html {
   font-size: 16px;
+  height: 100%;
+  padding: 0;
+
 }
 
 @media (max-width: 660px) {    
   html {
     font-size: 10px;
-  }
-  body{
-    background-image: url(gallery/ecoPark.jpg);
   }
   #container {
     width:40vw;
@@ -76,7 +73,7 @@ a{
   transform: translateY(0) scale(1);
 }
 .notes {
-  color: #b12c4b;
+  color: #804452;
   text-align: center;
   z-index: 1;
 }
@@ -101,9 +98,9 @@ footer {
 footer button{
   height: fit-content;
   text-align: center;
-  color: #b12c4b;
+  color: #804452;
   background-color: white;
-  border: 2px solid #5c353e;
+  border: 2px solid #804452;
   padding: 0 2% 0 2%;
   margin:2.5%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -130,7 +127,6 @@ footer button:hover{
   padding:0;
   height: 100dvh;
   width: 100vw;
-  background-color: #ffc5d3;
 }
 
 #termBox{
@@ -138,7 +134,7 @@ footer button:hover{
   padding: 2%;;
   height: auto;
   max-width: 500px;
-  border: #5c353e 2px solid;
+  border: #804452 2px solid;
   border-radius: 20px;
   background-color: red;
   color: white;
@@ -175,11 +171,10 @@ footer button:hover{
   padding:0;
   height: 100dvh;
   width: 100vw;
-  background-color: #ffc5d3;
 }
 
 #quiz h1{
-  color: #5c353e;
+  color: #804452;
   text-align: center;
   margin: 10% 0 5% 0;
   z-index: 1;
@@ -199,7 +194,7 @@ footer button:hover{
   text-align: center;
   width: 100px;
   transition: 0.3s;
-  border: 2px solid #5c353e;
+  border: 2px solid #804452;
   border-radius: 20px;
 
 }
@@ -233,7 +228,7 @@ footer button:hover{
   width: 30vw;
   font-size: 1rem;
   margin-top: 10dvh;
-  color: #6c3240;
+  color: #804452;
 }
 
 
@@ -245,11 +240,14 @@ footer button:hover{
 
 /*MESSAGE PAGE*/
 #letter{
-  background-color: rgb(255, 255, 229);
-  background-image: url(util/paperBackground.jpg);
-  background-size: cover;
-  background-position: center;
-  border:2px solid #5c353e;
+  background: 
+  linear-gradient(135deg, white 25%, transparent 25%) -50px 0,
+  linear-gradient(225deg, white 25%, transparent 25%) -50px 0,
+  linear-gradient(315deg, white 25%, transparent 25%),
+  linear-gradient(45deg, white 25%, transparent 25%);	
+  background-size: 1.5em 1.5em;
+  background-color: rgb(251, 244, 229);
+  border:2px solid #b12c4b;
   margin: 5%;
   text-align: left;
   padding: 5%;
@@ -326,7 +324,7 @@ footer button:hover{
   align-items: center;
   height: auto;
   background-color: white;
-  border: 2px solid #b12c4b;
+  border: 2px solid #804452;
   border-radius: 2rem;
   padding: 1rem;
   text-align: left;
@@ -370,7 +368,7 @@ footer button:hover{
   height: auto;
   max-height: 200px;
   background-color: white;
-  border: 2px solid #5c353e;
+  border: 2px solid #b12c4b;
   border-radius: 20px;
   padding: 2%;
   margin:2.5%;
@@ -407,13 +405,13 @@ footer button:hover{
 #timers{
   text-align: center;
   margin-bottom: 10%;
-  color: #b12c4b;
+  color: #804452;
   z-index: 1;
 
 }
 
 #timers h1{
-  color: #5c353e;
+  color: #804452;
   position:relative;
 }
 
@@ -422,7 +420,7 @@ footer button:hover{
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #5c353e;
+  background: #804452;
   height: 2px;
   width:100%;
 }   
