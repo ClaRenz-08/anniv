@@ -5,8 +5,6 @@ function showPage(pageID) {
     for (let i=0; i < pages.length;i++) {
         pages[i].classList.remove('show');
     }
-
-
     const selectedPage=document.getElementById(pageID);
     selectedPage.classList.add('show');
     selectedPage.scrollTo(0, 0);
@@ -41,7 +39,7 @@ const t = setInterval(()=>{
     if (counterElement) {
         counterElement.textContent = `${days}  days`;
     }
-},60000)
+},1000)
 
 const talkStartDate = new Date("December 3, 2023 00:00:00").getTime();
 const talkCounter = setInterval(()=>{
@@ -54,4 +52,4 @@ const talkCounter = setInterval(()=>{
     if (talkCounterElement) {
         talkCounterElement.textContent = `${days} days`;
     }
-},60000);
+},1000);
