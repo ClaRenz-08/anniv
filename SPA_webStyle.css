@@ -325,6 +325,7 @@ footer button:hover{
   align-items: center;
   height: auto;
   background-color: white;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
   border: 2px solid #804452;
   border-radius: 2rem;
   padding: 1rem;
@@ -425,4 +426,5 @@ footer button:hover{
   height: 2px;
   width:100%;
 }   
+
 
