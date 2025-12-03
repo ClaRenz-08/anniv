@@ -337,7 +337,7 @@ footer button:hover{
 
 }
 
-.songInfo{
+.song-info{
   text-align:center;
 }
 
@@ -430,6 +430,7 @@ footer button:hover{
   height: 2px;
   width:100%;
 }   
+
 
 
 
