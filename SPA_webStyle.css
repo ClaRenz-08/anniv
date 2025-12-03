@@ -337,6 +337,10 @@ footer button:hover{
 
 }
 
+.songInfo{
+  text-align:center;
+}
+
 .song img{
   width: 30%;
   aspect-ratio: 1/1;
@@ -426,5 +430,6 @@ footer button:hover{
   height: 2px;
   width:100%;
 }   
+
 
 
